@@ -1,0 +1,113 @@
+body {
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  header {
+    background-color: #343a40;
+    padding-top: 20px;
+  }
+  
+  header .navbar-brand {
+    font-size: 24px;
+  }
+  
+  header .nav-link {
+    font-size: 18px;
+    color: #ffffff;
+  }
+  
+  header .nav-link:hover {
+    color: #f8f9fa;
+  }
+  
+  .card {
+    margin-bottom: 20px;
+    border-radius: 8px;
+    object-fit: cover;
+   
+  }
+  
+  .card .title {
+    color: #ffffff;
+  }
+  
+  .card .image {
+    width: 100%;
+    height: auto;
+  
+  }
+  
+  .card .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #ffffff;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+  .card:hover .overlay {
+    opacity: 1;
+  }
+  
+  #banner {
+    background-color: #f8f9fa;
+  }
+  
+  #menu {
+    background-color: #ffffff;
+  }
+  
+  #galeria {
+    background-color: #f8f9fa;
+  }
+  
+  #ubicacion-contacto {
+    background-color: #ffffff;
+  }
+  
+  footer {
+    background-color: #343a40;
+    color: #ffffff;
+  }
+  
+  .fixed-scroll {
+    background-color: rgba(0, 0, 0, 0.8);
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  
+  
+  .card-img-top {
+    object-fit: cover;
+    height: 200px; /* Altura deseada para las imágenes */
+  }
+
+  /* Estilos para el menú */
+.menu-category {
+    margin-bottom: 30px;
+  }
+  
+  .menu-category h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+  }
+  
+  .item-name {
+    font-weight: bold;
+  }
+  
+  .item-price {
+    color: #888;
+  }
+  #carouselExampleControls img {
+    height: 300px; /* Ajusta esta altura según tus preferencias */
+    object-fit: cover;
+  }  
