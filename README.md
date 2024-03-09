@@ -1,23 +1,22 @@
-# Cafetería Exótica ☕🌴
+# Cafetería Exótica
 
-¡Bienvenido al repositorio de Cafetería Exótica! Aquí encontrarás el código fuente para el sitio web de nuestra cafetería, donde ofrecemos una amplia variedad de productos a base de café.
-El sitio web de Cafetería Exótica es una aplicación web estática, lo que significa que está compuesto principalmente por archivos HTML, CSS y JavaScript. No requiere de un servidor de aplicaciones ni de una base de datos para funcionar, ya que todos los recursos son servidos directamente al cliente y el contenido es fijo.
+![Cafetería Exótica](img/favicon.ico)
 
-## Contenido 📁
+Este es el repositorio oficial de la Cafetería Exótica, un proyecto de sitio web para una cafetería que ofrece una variedad de postres, paninis y bebidas alcohólicas con café. El sitio está diseñado utilizando HTML, CSS y JavaScript.
 
-- **index.html**: Este archivo contiene el código HTML que define la estructura del sitio web de Cafetería Exótica.
-- **style.css**: Este archivo contiene los estilos CSS utilizados para dar formato y diseño al sitio web.
-- **README.md**: Este archivo README proporciona una visión general del repositorio y las instrucciones básicas de uso.
-- **Recursos Externos**: El sitio web utiliza Bootstrap y Google Fonts para la maquetación y la tipografía, respectivamente. Estos recursos están enlazados directamente desde sus CDN correspondientes.
+## Contenido
 
-## Uso 🖥️
+- [Descripción](#descripción)
+- [Características](#características)
 
-Para visualizar el sitio web, simplemente abre el archivo `index.html` en un navegador web compatible. Si deseas contribuir al desarrollo del sitio web, sigue los pasos a continuación:
+## Descripción
 
-1. Haz un fork de este repositorio.
-2. Clona el repositorio forked a tu máquina local.
-3. Realiza tus cambios y mejoras en el código.
-4. Haz commit de tus cambios y sube tus commits a tu repositorio forked.
-5. Envía un pull request para que tus cambios se revisen y se integren en este repositorio principal.
+La Cafetería Exótica es un proyecto ficticio de sitio web para una cafetería con sede en México. Ofrece una amplia gama de postres, paninis y bebidas alcohólicas con café para satisfacer los gustos de sus clientes. Este repositorio contiene el código fuente del sitio web.
 
+## Características
 
+- **Variedad de Postres y Paninis:** La cafetería ofrece una amplia selección de postres calientes, paninis y bebidas alcohólicas con café.
+
+- **Información de Contacto:** Se proporciona información de contacto para que los clientes puedan comunicarse con la cafetería.
+
+- **Reserva de Mesa Online:** Los clientes pueden reservar mesas fácilmente a través del sistema de reservas online.
