@@ -1,8 +1,10 @@
 # Cafetería Exótica
 
-![Cafetería Exótica](img/favicon.ico)
+![Cafetería Exótica]
 
 Este es el repositorio oficial de la Cafetería Exótica, un proyecto de sitio web para una cafetería que ofrece una variedad de postres, paninis y bebidas alcohólicas con café. El sitio está diseñado utilizando HTML, CSS y JavaScript.
+
+El sitio web de Cafetería Exótica es una aplicación web estática, No requiere de un servidor de aplicaciones ni de una base de datos para funcionar, ya que todos los recursos son servidos directamente al cliente y el contenido es fijo.
 
 ## Contenido
 
@@ -15,8 +17,15 @@ La Cafetería Exótica es un proyecto ficticio de sitio web para una cafetería 
 
 ## Características
 
-- **Variedad de Postres y Paninis:** La cafetería ofrece una amplia selección de postres calientes, paninis y bebidas alcohólicas con café.
 
-- **Información de Contacto:** Se proporciona información de contacto para que los clientes puedan comunicarse con la cafetería.
+- 🥪 **Sabrosos Paninis:** Deliciosos paninis disponibles en diferentes sabores y combinaciones para satisfacer los antojos de los clientes.
 
-- **Reserva de Mesa Online:** Los clientes pueden reservar mesas fácilmente a través del sistema de reservas online.
+- 🍹 **Bebidas Alcohólicas con Café:** Una variedad de bebidas alcohólicas con café, perfectas para aquellos que desean algo más que una bebida tradicional.
+
+- 📞 **Información de Contacto:** Se proporciona información de contacto para que los clientes puedan comunicarse con la cafetería.
+
+- 📅 **Reserva de Mesa Online:** A través del sistema de reservas online, los clientes pueden reservar mesas fácilmente para disfrutar de su experiencia en la cafetería.
+
+- 🎨 **Diseño Atractivo:** Diseño visualmente atractivo y fácil de navegar, que destaca los productos y servicios ofrecidos por la cafetería.
+
+- 📷 **Galería de Imágenes:** Una galería de imágenes que muestra visualmente los deliciosos postres, paninis y bebidas disponibles en la cafetería.
