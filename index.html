@@ -13,6 +13,16 @@
     href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
     rel="stylesheet"
   />
+  <!-- Font Awesome -->
+<link
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+rel="stylesheet"
+/>
+<!-- Google Fonts -->
+<link
+href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+rel="stylesheet"
+/>
 </head>
 <body>
   <header>
@@ -25,13 +35,18 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a class="nav-link" href="#menu">Menú</a>
+              <a class="nav-link" href="#menu"onclick="ocultarSecciones()" >Menú</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#galeria">Galería</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#ubicacion-contacto">Ubicación y Contacto</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="" data-toggle="modal" data-target="#historiaModal">
+                Informacion Extra
+              </a>
             </li>
           </ul>
         </div>
@@ -41,7 +56,7 @@
   <section id="menu" class="py-5 text-center">
     <div class="container">
       <h1>Bienvenido a Cafetería Exótica</h1>
-      <p>Disfruta de los mejores productos a base de café</p>
+      Disfruta de los mejores productos a base de café
     </div>
   </section>
   <section id="areas-restaurante" class="py-5 text-center">
@@ -50,7 +65,7 @@
         <div class="col-md-4">
           <div class="card">
             <h3 class="title">Café</h3>
-            <a href="#cafe">
+            <a href="#cafe" onclick="toggleCafeSection()">
               <img src="https://todocafe.es/wp-content/uploads/2020/09/Tipos_de_cafe.jpg" class="card-img-top" alt="Área de Café">
               <div class="overlay">
                 <p>Descubre nuestros deliciosos cafés</p>
@@ -61,7 +76,7 @@
         <div class="col-md-4">
           <div class="card">
             <h3 class="title">Postres</h3>
-            <a href="#postres">
+            <a href="#postres" onclick="togglePostresSection()">
               <img src="https://www.elmueble.com/medio/2023/03/16/recetas-con-cafe_fa5aa5e4_230316131549_900x900.jpg" class="card-img-top" alt="Área de Postres">
               <div class="overlay">
                 <p>Prueba nuestros deliciosos postres</p>
@@ -84,7 +99,8 @@
     </div>
   </section>
   <br />
-  <section id="cafe" class="py-5 text-center bg-light">
+  <div id="cafe-container" style="display: none;">
+  <section id="cafe" class="py-5 text-center ">
     <br />
     <div class="container">
       <h2>Cafés</h2>
@@ -124,6 +140,8 @@
       </div>
     </div>
   </section>
+</div>
+<div id="postres-container" style="display: none;">
   <section id="postres" class="py-5 text-center">
     <br />
     <div class="container">
@@ -159,6 +177,7 @@
       </div>
     </div>
   </section>
+  </div>
   <section id="galeria" class="py-5 text-center">
     <br />
     <div class="container">
@@ -185,30 +204,8 @@
           </a>
         </div>
       </div>
-    <div class="container">
-      <div class="row">
-        <div class="col-md-4">
-          <h3>Nuestra Historia</h3>
-          <p>En Cafetería Exótica, nos apasiona ofrecerte la mejor experiencia de café. Nuestra historia comenzó hace más de una década, cuando nuestro fundador, un amante del café, decidió compartir su pasión con el mundo. Desde entonces, hemos estado comprometidos con la calidad, la innovación y el servicio excepcional.</p>
-        </div>
-        <div class="col-md-4">
-          <h3>Nuestros Valores</h3>
-          <ul class="list-unstyled">
-            <li>- Pasión por el café</li>
-            <li>- Calidad en cada taza</li>
-            <li>- Excelencia en el servicio</li>
-            <li>- Innovación constante</li>
-            <li>- Responsabilidad ambiental</li>
-          </ul>
-        </div>
-        <div class="col-md-4">
-          <h3>Nuestra Misión</h3>
-          <p>Nuestra misión es proporcionar a nuestros clientes una experiencia única y satisfactoria, ofreciendo productos de la más alta calidad y un servicio excepcional. Nos esforzamos por ser líderes en la industria del café, promoviendo la cultura del café y contribuyendo positivamente a nuestras comunidades y al medio ambiente.</p>
-        </div>
-      </div>
-    </div>
+      <br />
   </section>
-  
   <section id="ubicacion-contacto" class="py-5 text-center">
     <div class="container">
       <div class="row">
@@ -218,33 +215,77 @@
         </div>
         <div class="col-md-6">
           <h2>Contacto</h2>
+          <p>¡Organiza tus eventos con nosotros y crea momentos inolvidables en Cafetería Exótica! Nuestro equipo estará encantado de ayudarte a planificar y llevar a cabo tus celebraciones y reuniones especiales. Ya sea un cumpleaños, una reunión de empresa o cualquier otro evento, estamos aquí para hacerlo memorable.</p>
           <p>Puedes contactarnos a través de:</p>
           <address>
             Teléfono: 123-456-7890<br>
             Correo electrónico: info@cafeteriaexotica.com
           </address>
-          <a href="https://wa.me/1234567890" class="btn btn-primary">Contactar por WhatsApp</a>
+          <a href="https://wa.me/1234567890" class="btn btn-success">
+            <i class="fab fa-whatsapp"></i> Contactar por WhatsApp
+          </a>               
         </div>
       </div>
     </div>
   </section>
+
+  <div class="modal fade" id="historiaModal">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+      
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">Nuestra Historia</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        
+        <!-- Modal body -->
+        <div class="modal-body">
+          <h2 class="modal-title">Conoce Nuestra Historia, Valores y Misión</h2>
+          <br />
+          <div class="container">
+            <div class="row">
+              <div class="col-md-4 content-section">
+                <h3>Nuestra Historia</h3>
+                <p>En Cafetería Exótica, nos apasiona ofrecerte la mejor experiencia de café. Nuestra historia comenzó hace más de una década, cuando nuestro fundador, un amante del café, decidió compartir su pasión con el mundo. Desde entonces, hemos estado comprometidos con la calidad, la innovación y el servicio excepcional.</p>
+              </div>
+              <div class="col-md-4 content-section">
+                <h3>Nuestros Valores</h3>
+                <ul>
+                  <li>Pasión por el café</li>
+                  <li>Calidad en cada taza</li>
+                  <li>Excelencia en el servicio</li>
+                  <li>Innovación constante</li>
+                  <li>Responsabilidad ambiental</li>
+                </ul>
+              </div>
+              <div class="col-md-4 content-section">
+                <h3>Nuestra Misión</h3>
+                <p>Nuestra misión es proporcionar a nuestros clientes una experiencia única y satisfactoria, ofreciendo productos de la más alta calidad y un servicio excepcional. Nos esforzamos por ser líderes en la industria del café, promoviendo la cultura del café y contribuyendo positivamente a nuestras comunidades y al medio ambiente.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+
   <footer class="text-center text-light py-4">
     <div class="container">
-      <p>&copy; 2024 Cafetería Exótica. Todos los derechos reservados.</p>
+      &copy; 2024 Cafetería Exótica. Todos los derechos reservados.
     </div>
   </footer>
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@1.16.1/dist/umd/popper.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-  <script>
-    window.addEventListener('scroll', function() {
-      const navbar = document.getElementById('navbar');
-      if (window.scrollY > 50) {
-        navbar.classList.add('fixed-scroll');
-      } else {
-        navbar.classList.remove('fixed-scroll');
-      }
-    });
-  </script>
+  
+  <script src="Scripts.js"></script>
+
 </body>
 </html>
